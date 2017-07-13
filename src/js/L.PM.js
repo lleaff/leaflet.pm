@@ -15,6 +15,7 @@ import Draw from './Draw/L.PM.Draw';
 import './Draw/L.PM.Draw.Circle';
 import './Draw/L.PM.Draw.Line';
 import './Draw/L.PM.Draw.Poly';
+import './Draw/L.PM.Draw.Rectangle';
 import './Draw/L.PM.Draw.Marker';
 
 import Edit from './Edit/L.PM.Edit';
@@ -53,6 +54,13 @@ L.PM = L.PM || {
 
         L.Marker.addInitHook(initMarker);
 
+        function initRectangle() {
+            if(!this.options.pmIgnore) {
+                this.pm = new L.PM.Edit.Rectangle(this);
+            }
+        }
+
+        L.Rectangle.addInitHook(initRectangle);
 
         function initPolygon() {
             if(!this.options.pmIgnore) {

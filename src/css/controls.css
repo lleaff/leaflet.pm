@@ -27,6 +27,10 @@
     background-image: url('../assets/icons/line.png');
     background-size: 80%;
 }
+.leaflet-pm-toolbar .leaflet-pm-icon-rectangle {
+    background-image: url('../assets/icons/rectangle.png');
+    background-size: 80%;
+}
 .leaflet-pm-toolbar .leaflet-pm-icon-circle {
     background-image: url('../assets/icons/circle.png');
     background-size: 90%;
